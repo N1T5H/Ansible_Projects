@@ -93,4 +93,4 @@ This project is licensed under the MIT License.
 
 ---
 
-🚀 **Now you're ready to provision AWS EC2 instances using Ansible!** Let me know if you need any modifications. Happy automating! 💡
+Happy automating! Using Ansible💡

@@ -1,0 +1,17 @@
+---
+- name: Terminate AWS EC2 Instance
+  hosts: localhost
+  connection: local
+  gather_facts: False
+
+  tasks:
+    - name: Terminate EC2 instance
+      amazon.aws.ec2_instance:
+        state: absent
+        region: "{{ aws_region }}"
+        instance_ids:
+          - "i-1234567890abcdef0"
+      register: termination_result
+
+    - debug:
+        var: termination_result

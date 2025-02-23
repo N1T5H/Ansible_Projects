@@ -23,8 +23,6 @@ aws-ansible-project/
 │   ├── hosts         # Inventory file for managed nodes
 │   ├── group_vars/
 │   │   ├── all.yml   # Global variables
-│   │   ├── app.yml   # App-specific variables
-│   │   ├── db.yml    # Database-specific variables
 ├── roles/
 │   ├── ec2_instance/
 │   │   ├── tasks/

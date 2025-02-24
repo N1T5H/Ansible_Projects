@@ -1,8 +1,0 @@
----
-- hosts: all
-  become: true
-  tasks:
-    - name: Stop Ubuntu instances only
-      ansible.builtin.command: /sbin/shutdown -t now
-      when: 
-        ansible_facts['os_family'] == 'RedHat'

@@ -6,6 +6,7 @@ This Ansible Playbook automates the setup of OpenSSH, OpenSSL, and Docker on tar
 
 ## ✨ Features
 
+- ✅ Runs sudo apt update before installing any packages.
 - ✅ Updates OpenSSH and OpenSSL only if they are installed.
 - 🔍 Verifies if Docker is already installed.
 - 📦 Installs Docker if not present.

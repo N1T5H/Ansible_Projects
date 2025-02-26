@@ -1,0 +1,9 @@
+#add this to main yaml to store the inventory list of servers
+
+    - name: Create file server list
+      copy:
+        content: |
+          {% for item in ec2_instances.results %}
+          {{ item.item.os }}@{{ item.instances[0].public_ip_address }}
+          {% endfor %}
+        dest: "./server_list.txt"

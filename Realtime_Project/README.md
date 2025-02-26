@@ -15,10 +15,6 @@ This project demonstrates **AWS automation using Ansible**, covering essential *
 ### ✅ **Task 2: Set Up Secure Passwordless Authentication**  
 - Enable **passwordless SSH access** from the Ansible control node to the EC2 instances.  
 - Use **SSH key-based authentication** (`ssh-copy-id`).  
-- Implement **multiple authentication mechanisms**, including:  
-  - **Key-based authentication** with SSH keys.  
-  - **AWS Systems Manager (SSM) Session Manager** as an alternative to SSH for improved security.  
-  - **Bastion Host (Jump Server)** setup for added security in production environments.  
 - Ensure **secure storage of private keys** using **Ansible Vault** and restricted permissions.  
 
 ### ✅ **Task 3: Automate Shutdown of Ubuntu Instances**  

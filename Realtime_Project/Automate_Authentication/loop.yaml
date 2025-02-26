@@ -1,0 +1,6 @@
+#insert to main yaml to automate authentication by using Loop
+ 
+ - name: Ensure SSH key authentication is set up
+      shell: ssh-copy-id -f "-o IdentityFile=/path/to/aws_login.pem" {{ item.item.os }}@{{ item.instances[0].public_ip_address }}
+      loop: "{{ ec2_instances.results }}"
+      ignore_errors: true  # Prevent playbook from stopping on failures

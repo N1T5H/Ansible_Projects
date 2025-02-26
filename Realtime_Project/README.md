@@ -68,15 +68,12 @@ ansible-playbook -i inventory.ini playbooks/ec2_stop.yaml --ask-vault-pass
 ✅ **Secure credential storage** with **Ansible Vault**.  
 ✅ **Conditional execution** with **Ansible facts & `when:` statements**.  
 ✅ **Idempotency** ensures safe re-execution without duplication.  
-✅ **Hardened security** using AWS SSM and Bastion Hosts.  
 
 ---
 
 ## 🔒 Security Best Practices  
 🔹 **Use Ansible Vault** to encrypt sensitive credentials.  
 🔹 **Restrict SSH Key Access** (`chmod 400 ~/.ssh/aws_key.pem`).  
-🔹 **Prefer AWS SSM Session Manager** over direct SSH when possible.  
-🔹 **Use a Bastion Host** to avoid exposing instances directly to the public internet.  
 🔹 **Limit IAM permissions** to only what’s necessary for EC2 operations.  
 
 ---

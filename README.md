@@ -94,9 +94,6 @@ cd your-ansible-project
 2. Define Inventory
 Update the inventory file with target hosts:
 
-[web]
-webserver1 ansible_host=192.168.1.100 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
-
 
 3. Run a Playbook
 Execute a playbook to configure servers:

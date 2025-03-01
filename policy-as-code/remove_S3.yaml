@@ -1,0 +1,11 @@
+---
+- name: Remove s3 bucket 
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Delete s3 buckets
+      amazon.aws.s3_bucket:
+        name: "{{ item.name }}"
+        state: absent
+      loop: "{{ result.buckets }}"

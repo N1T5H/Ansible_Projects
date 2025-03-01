@@ -46,10 +46,11 @@ ansible --version
 ## Directory Structure
 ```bash
 ansible-projects/
-│-- aws-configuration/      # Automating AWS setup with Ansible
-│-- realtime-project/       # Real-world use cases and automation examples
-│-- policy-as-code/         # Enforcing security policies using Ansible
-│-- authentication/         # Secure authentication setup, including password authentication
+│-- aws-configuration/                              # Automating AWS setup with Ansible
+│-- Realtime-Project/                               # Real-world use cases and automation examples
+│-- policy-as-code/                                 # Enforcing security policies using Ansible
+│-- authentication/                                 # Secure authentication setup, including password authentication
+|-- Docker Installation with Error Handling/        # Error Handling while installing Docker 
 ```
 
 ## Authentication: Password Authentication Setup
@@ -79,33 +80,6 @@ Navigate to the project directory and execute the playbook:
 ```bash
 ansible-playbook -i inventory.ini playbook.yml
 ```
-
-
-
-
-Getting Started
-
-1. Clone the Repository
-
-git clone https://github.com/your-username/your-ansible-project.git
-cd your-ansible-project
-
-
-2. Define Inventory
-Update the inventory file with target hosts:
-
-
-3. Run a Playbook
-Execute a playbook to configure servers:
-
-ansible-playbook playbooks/setup.yml -i inventory/hosts
-
-
-4. Check Connectivity
-Verify Ansible can connect to the hosts:
-
-ansible all -m ping -i inventory/hosts
-
 
 
 Contributing

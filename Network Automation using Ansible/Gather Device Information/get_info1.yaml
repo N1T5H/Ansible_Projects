@@ -1,0 +1,14 @@
+---
+- name: "Play 1: Gather Data from Routers"
+  connection: network_cli
+  hosts: wan_routers
+  tasks:
+    - name: "Task 1: IOS >> Gather NTP Association"
+      ios_command:
+        commands:
+          - show ntp Association
+      register: show_ntp
+
+    - name: "Task 2: Debug >> Command output"
+      debug:
+        msg:  "{{ show_ntp}}"

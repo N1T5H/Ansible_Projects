@@ -18,7 +18,7 @@ This project automates network device configurations using Ansible. It performs 
 ## 📂 Project Structure
 ```
 ├── inventory.ini          # List of network devices
-├── main.yml # Ansible playbook
+├── main.yml               # Ansible playbook
 ├── templates/
 │   ├── network_config.j2  # Jinja2 template for configurations
 ├── vars.yml               # Variables for network configurations
